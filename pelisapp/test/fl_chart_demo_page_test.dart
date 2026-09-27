@@ -22,6 +22,12 @@ void main() {
     await tester.tap(find.byIcon(Icons.bar_chart));
     await tester.pumpAndSettle();
 
-    expect(find.text('FL Chart'), findsOneWidget);
+    expect(
+      find.descendant(
+        of: find.byType(AppBar),
+        matching: find.text('FL Chart'),
+      ),
+      findsOneWidget,
+    );
   });
 }

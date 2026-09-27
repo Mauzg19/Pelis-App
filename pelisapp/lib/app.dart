@@ -4,6 +4,7 @@ import 'features/charts/presentation/fl_chart_demo_page.dart';
 import 'features/favorites/presentation/favorite_page.dart';
 import 'features/home/presentation/home_page.dart';
 import 'features/search/presentation/search_page.dart';
+import 'features/syncfusion_charts/presentation/syncfusion_charts_page.dart';
 
 class MovieApp extends StatelessWidget {
   const MovieApp({super.key});
@@ -38,6 +39,7 @@ class _AppShellState extends State<AppShell> {
     const SearchPage(),
     const FavoritePage(),
     const FlChartDemoPage(),
+    const SyncfusionChartsPage(),
   ];
 
   @override
@@ -56,7 +58,8 @@ class _AppShellState extends State<AppShell> {
           NavigationDestination(icon: Icon(Icons.home), label: 'Inicio'),
           NavigationDestination(icon: Icon(Icons.search), label: 'Buscar'),
           NavigationDestination(icon: Icon(Icons.favorite), label: 'Favoritos'),
-          NavigationDestination(icon: Icon(Icons.bar_chart), label: 'Gráficas'),
+          NavigationDestination(icon: Icon(Icons.bar_chart), label: 'FL Chart'),
+          NavigationDestination(icon: Icon(Icons.analytics), label: 'Syncfusion'),
         ],
       ),
     );
