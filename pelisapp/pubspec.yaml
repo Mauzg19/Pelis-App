@@ -35,6 +35,9 @@ dependencies:
   fl_chart: ^1.0.0
   http: ^1.6.0
   syncfusion_flutter_charts: ^34.2.9
+  flutter_echarts: ^2.5.0
+  web: ^1.1.1
+  community_charts_flutter: ^1.0.4
 
 dev_dependencies:
   flutter_test:

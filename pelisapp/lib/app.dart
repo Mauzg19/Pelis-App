@@ -4,7 +4,9 @@ import 'features/charts/presentation/fl_chart_demo_page.dart';
 import 'features/favorites/presentation/favorite_page.dart';
 import 'features/home/presentation/home_page.dart';
 import 'features/search/presentation/search_page.dart';
+import 'features/echarts/presentation/echarts_page.dart';
 import 'features/syncfusion_charts/presentation/syncfusion_charts_page.dart';
+import 'features/community_charts/presentation/community_charts_page.dart';
 
 class MovieApp extends StatelessWidget {
   const MovieApp({super.key});
@@ -40,6 +42,8 @@ class _AppShellState extends State<AppShell> {
     const FavoritePage(),
     const FlChartDemoPage(),
     const SyncfusionChartsPage(),
+    const EchartsPage(),
+    const CommunityChartsPage(),
   ];
 
   @override
@@ -60,6 +64,11 @@ class _AppShellState extends State<AppShell> {
           NavigationDestination(icon: Icon(Icons.favorite), label: 'Favoritos'),
           NavigationDestination(icon: Icon(Icons.bar_chart), label: 'FL Chart'),
           NavigationDestination(icon: Icon(Icons.analytics), label: 'Syncfusion'),
+          NavigationDestination(icon: Icon(Icons.auto_graph), label: 'ECharts'),
+          NavigationDestination(
+            icon: Icon(Icons.insert_chart_outlined),
+            label: 'Community',
+          ),
         ],
       ),
     );
